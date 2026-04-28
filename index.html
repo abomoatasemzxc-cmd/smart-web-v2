@@ -22,15 +22,16 @@
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             border: 1px solid #334155;
-            width: 300px;
+            width: 320px;
         }
         h2 { color: #38bdf8; margin-bottom: 1.5rem; }
         .stat-box {
             background: #0f172a;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             border-radius: 8px;
             font-size: 1.1rem;
+            border: 1px solid #1e293b;
         }
         span { font-weight: bold; color: #fbbf24; }
         button {
@@ -51,7 +52,7 @@
 <body>
 
 <div class="container">
-    <h2>📦 Smart Web</h2>
+    <h2>📦 Smart Web v2</h2>
     
     <div class="stat-box">الزيارات: <span id="v">0</span></div>
     <div class="stat-box">التحميلات: <span id="d">0</span></div>
@@ -73,8 +74,7 @@
         d++;
         localStorage.setItem("d", d);
         document.getElementById("d").innerText = d;
-        alert("بدأ التحميل...");
-        // هنا يمكنك إضافة رابط التحميل الحقيقي مستقبلاً
+        alert("بدأ التحميل من Smart Web...");
     }
 </script>
 
