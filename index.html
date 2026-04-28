@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Smart Web</title>
+</head>
+<body style="text-align:center;font-family:tahoma;background:#f4f4f4">
+
+<h2>📦 موقعي</h2>
+
+<p>الزيارات: <span id="v">0</span></p>
+<p>التحميلات: <span id="d">0</span></p>
+
+<button onclick="dl()">تحميل</button>
+
+<script>
+let v = localStorage.getItem("v") || 0;
+v++; localStorage.setItem("v", v);
+document.getElementById("v").innerText = v;
+
+let d = localStorage.getItem("d") || 0;
+document.getElementById("d").innerText = d;
+
+function dl(){
+d++;
+localStorage.setItem("d", d);
+document.getElementById("d").innerText = d;
+}
+</script>
+
+</body>
+</html>
